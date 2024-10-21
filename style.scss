@@ -11,9 +11,12 @@ body{
     position: relative;
     color: #fff;
     font-family: "Sevillana", cursive;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-#fundo-do-site{
+.fundo-do-site{
     height: 100vh;
     width: 100%;
     position: absolute;
@@ -28,19 +31,28 @@ h1{
     text-align: center;
     width: 100%;
     font-weight: 200;
+    margin-top: 25px;
 }
 
 figure{
-    width: 300px;
-    position: relative;
-    top: 200px;
+    width: 700px;
+    z-index: 222;
+    position: absolute;
+    top: 183px;
     left: 500px;
 }
 
-.lampada{
-    position: absolute;
-    z-index: 222;
+#lampada{
     border: solid blue;
-    width: 100%;
+    width: 60%;
 }
 
+#btn{
+    position: absolute;
+    z-index: 222;
+    bottom: 90px;
+    border: none;
+    background-color: #007BFF;
+    border-radius: 50px;
+    padding: 15px 100px;
+}
