@@ -9,8 +9,9 @@ let lampOn = false;
 button.addEventListener('click', () => {
     lampOn = !lampOn;
     lampada.src = lampOn
-    ? "https://raw.githubusercontent.com/mariaccarolina/TurmaFDV/refs/heads/main/imagens/lampada.png"
-    : "https://raw.githubusercontent.com/mariaccarolina/TurmaFDV/refs/heads/main/imagens/lampada-com-mago.png"
-})
+    ? "https://raw.githubusercontent.com/mariaccarolina/TurmaFDV/refs/heads/main/imagens/lampada-com-mago.png"
+    : "https://raw.githubusercontent.com/mariaccarolina/TurmaFDV/refs/heads/main/imagens/lampada.png"
 
-// 
+    // Substitui todo o texto interno de um elemento html
+    button.textContent = lampOn ? "Voltar" : "Clique Aqui";
+})
